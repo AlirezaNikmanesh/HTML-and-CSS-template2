@@ -1,0 +1,509 @@
+body {
+    direction: rtl;
+    background-color: rgb(241, 241, 241);
+}
+
+header {
+    max-width: 80%;
+    margin: 0px auto;
+}
+
+.header-top {
+    border-bottom: 1px rgb(207, 207, 207) solid;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(250, 250, 250);
+}
+
+.header-top .logo {
+    margin-right: 50px;
+}
+
+.header-top .search-box {
+    display: flex;
+    justify-content: space-between;
+    height: 35px;
+    margin-top: 25px;
+    margin-right: 20px;
+    width: 800px;
+    border: 1px solid rgb(45, 45, 255);
+    border-radius: 20px;
+    background-color: rgb(250, 250, 250);
+}
+
+.header-top .search-box input {
+    height: 60%;
+    width: 100%;
+    margin: auto 20px auto 0px;
+    border: none;
+    background-color: rgb(250, 250, 250);
+    color: rgb(45, 45, 255);
+    font-size: 1.1em;
+}
+
+.header-top .search-box i {
+    padding: 10px;
+    margin-left: 5px;
+    color: rgb(45, 45, 255);
+}
+
+.header-top .user-box {
+    margin: auto 20px auto 50px;
+}
+
+.header-top .user-box i {
+    margin-left: 15px;
+    font-size: 1.5em;
+    color: rgb(45, 45, 255);
+}
+
+.header-top .user-box a {
+    text-decoration: none;
+    font-size: .9em;
+    color: rgb(140, 140, 173);
+}
+
+.header-button {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(250, 250, 250);
+    height: auto;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.header-button .taxi {
+    margin: 30px 0px;
+}
+
+.header-button .taxi a {
+    text-decoration: none;
+    color: rgb(146, 146, 146)
+}
+
+.header-button .taxi i {
+    font-size: 2em;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.slideshow-container {
+    max-width: 78%;
+    position: relative;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    border-radius: 30px;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: rgb(7, 7, 7);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(122, 122, 122, 0.8);
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    position: relative;
+    top: -50px;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+
+/* end of slidshow */
+
+
+/* newest-copen */
+.centeral-main {
+    width: 78%;
+    margin: 0px auto;
+}
+
+.header-of-newest-copen {
+    width: 15%;
+    height: 50px;
+    background-color: red;
+    color: green;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    text-align: center;
+    background-color: rgb(250, 250, 250);
+    font-weight: bold;
+    
+}
+.header-of-newest-copen>span {
+    position: relative;
+    top: 15px;
+}
+
+.centeral-main .company-of-newest-copen {
+    height: 300px;
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    justify-content: space-between;
+    
+}
+.company-of-newest-copen .company-image {
+    width: 20%;
+    margin: auto 30px;
+}
+
+.company-of-newest-copen .company-explain {
+    width: 60%;
+}
+
+.company-of-newest-copen .company-explain .explain-header {
+    margin-top: 50px;
+    margin-bottom: 60px;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: black;
+}
+
+.company-of-newest-copen .company-explain .explain-more {
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+.company-of-newest-copen .company-explain .explain-button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.off-box {
+    color: purple;
+    padding: 10px 50px;
+    height: 15px;
+    text-align: center;
+    font-weight: lighter;
+    background-color: rgb(214, 219, 220);
+    border-radius: 5px;
+    border-right: 3px purple solid;
+}
+
+.time-to-live {
+    margin-right: 50px;
+    color: rgb(255, 0, 0);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.company-of-newest-copen .see-more {
+    width: 40%;
+    background-color: rgb(94, 188, 214);
+    height: 30px;
+    width: 150px;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 8px;
+    position: relative;
+    top: 50%;
+    left: 10%;
+    font-size: 1.2em;
+
+}
+.company-of-newest-copen .see-more a {
+    text-decoration: none;
+    color : white;  
+}
+.see-more-for-all{
+    height: 80px;
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    justify-content: left;
+}
+.see-more-for-all a {
+    text-decoration: none;
+    color: gray;
+    margin-left: 50px;
+    font-size: 1.4em;
+}
+/* start of best-off */
+.best-off{
+    display: flex;
+    justify-content: space-around;
+    width: 76%;
+    margin: 0px auto;
+}
+ .best-off-box{
+    height: 300px;
+    background-color: rgb(241, 241, 241);
+ }
+.best-off-header{
+text-align: center;
+margin-top: 40px;
+margin-bottom: 30px;
+
+
+}
+.best-off-header a {
+    text-decoration: none;
+    color: rgb(102, 151, 28); 
+    font-size: 1.6em;
+}  
+.best-off-box-one{
+     width: auto;
+     height: 400px;
+     background-color: rgb(248, 248, 248);
+     border-radius: 30px;
+     -webkit-border-radius: 30px;
+     -moz-border-radius: 30px;
+     -ms-border-radius: 30px;
+     -o-border-radius: 30px;
+}
+.best-off-box-down{
+    display: flex;
+    justify-content: space-around;
+}
+.best-off-box-one .best-off-box-img img { 
+    width: 350px;
+    height: 250px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.best-off-box-one .best-off-box-logo img{
+    width: 100px;
+    margin-top: 20px;
+}
+.best-off-box-one .best-off-box-text{
+    margin-top: 50px;
+    
+}
+.best-off-box-one .best-off-box-name{
+    position: relative;
+    margin-top: 100px;
+    left: 50%;
+}
+/* end of best-off */
+/* start of most-seen-copen */
+.most-cople{
+    margin-top: 130px;
+}
+/* end of most-seen-copen */
+/* start of best brand */
+.best-brand{
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    justify-content: space-around;
+    border-radius: 30px 0px 30px 30px;
+    -webkit-border-radius: 30px 0px 30px 30px;
+    -moz-border-radius: 30px 0px 30px 30px;
+    -ms-border-radius: 30px 0px 30px 30px;
+    -o-border-radius: 30px 0px 30px 30px;
+}
+.best-brand-image img {
+    height: 120px;
+    width: 100px;
+ }
+.best-brand-name {
+    text-align: center;
+    color: black;
+    font-size: 1.1em;   
+}
+.best-brand-icon {
+    text-align: center;
+    color: #bbb;
+    font-size: 0.9em;
+    margin: 10px 0px;
+    padding-bottom: 20px;
+}
+/* end of best brand */
+/* start of app */
+.app{
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    justify-content: space-around;
+    width: 78%;
+    margin: 40px auto;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    height: 250px;
+}
+.app-image{
+    width: 30%;
+    height: 200px;
+    margin-top: 20px;
+    
+}
+.app-text{
+    margin: 0px 50px;
+}
+.app-text-header{
+    text-align: center;
+    font-size: 1.3em;
+    margin: 30px 0px;   
+}
+.app-text-download{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+.app-text-download a {
+    margin-left: 20px;
+}
+/* end of best-of */
+/* start of footer */
+footer {
+    height: 780px;
+    width: 100%;
+    margin: 0px auto;
+    background-color: rgb(250, 250, 250);
+}
+.footer-header{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 100px;
+}
+.footer-header-text{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+.good-link{
+    margin-top: 50px;
+    line-height: 40px;
+    font-size: 1.2em;
+}
+.good-link li{
+    list-style: none;
+}
+.good-link li a{
+    text-decoration: none;
+    color: rgb(104, 104, 104);
+    text-align: center;
+}
+.good-link span { 
+    color: black;
+    font-size: 1.2em;
+    text-align: center;
+    margin-right: 20px;
+    
+}
+.footer-header-link span {
+    color: black;
+    font-size: 1.3em;
+    display: block;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+.footer-header-link .email-verify{
+    margin: 80px 0px 40px 150px ;
+}
+.footer-header-link .email-verify .email-box{
+    border: solid green 1px;
+    color:#717171;
+    border-radius: 0px 20px 20px 0px;
+    -webkit-border-radius: 0px 20px 20px 0px;
+    -moz-border-radius: 0px 20px 20px 0px;
+    -ms-border-radius: 0px 20px 20px 0px;
+    -o-border-radius: 0px 20px 20px 0px;
+    width: 350px;
+    height: 40px;
+    margin-right: 40px;
+}
+.footer-header-link .email-verify button{
+    position: relative;
+    color: white;
+    background-color: green;
+    border: solid green 1px;
+    border-radius: 20px 0px 0px 20px;
+    -webkit-border-radius: 20px 0px 0px 20px;
+    -moz-border-radius: 20px 0px 0px 20px;
+    -ms-border-radius: 20px 0px 0px 20px;
+    -o-border-radius: 20px 0px 0px 20px;
+    left: 1%;
+    width: 70px;
+    height: 44px ;
+}
+.footer-header-link .social-link{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+.footer-header-link .social-link img {
+    margin: 10px;
+}
+.footer-main {
+    width: 70%;
+    margin: 0px auto;
+    line-height: 1.5em;
+    font-size: 1.2em;
+}
+.social-group span{
+    display: flex;
+    justify-content: center;
+    margin:  20px 0px;
+    font-size: 1.3em;
+    opacity: 80%;
+}
+.social-logo{
+    display: flex;
+    justify-content: center;
+}
+.social-logo a {
+    margin: 0px 10px;
+}
+.social-logo a i{
+    font-size: 300%;
+    color: violet;
+}
+.ruls-mopon{
+    text-align: center;
+    margin: 10px auto 0px auto;
+    background-color: rgb(40, 230, 176);
+    color: white;
+    width: 20%;
+    border-radius: 10px 10px 0px 0px;
+    -webkit-border-radius: 10px 10px 0px 0px;
+    -moz-border-radius: 10px 10px 0px 0px;
+    -ms-border-radius: 10px 10px 0px 0px;
+    -o-border-radius: 10px 10px 0px 0px;
+    padding: 7px;
+}
+/* end of footer */
